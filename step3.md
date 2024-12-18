@@ -6,7 +6,7 @@
 
 #!/bin/bash
 
-sleep 1              # so that my laptop get contected to internet on restart 
+sleep 3              # so that my laptop get contected to internet on restart 
 
 
 
