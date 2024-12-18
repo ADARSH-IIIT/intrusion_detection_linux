@@ -1,0 +1,1 @@
+# do chatgpt to create a telegram bot using botfather , and also how to get telegram chat id 
