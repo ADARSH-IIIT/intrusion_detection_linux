@@ -12,3 +12,12 @@
 
 <img src="./phone_telegram.jpg" alt="Login Alert" title="Login Alert Notification" width="500" height="900">
 
+
+# EXAMPLE 
+### before continue respponse
+<img src="./before_continue.jpg" alt="Login Alert" title="Login Alert Notification" width="500" height="900">
+
+
+
+### after continue respponse
+<img src="./after_continue.jpg" alt="Login Alert" title="Login Alert Notification" width="500" height="900">
