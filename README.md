@@ -10,5 +10,5 @@
 
 
 
-<img src="./phone_telegram.jpg" alt="Login Alert" title="Login Alert Notification" width="500" height="500">
+<img src="./phone_telegram.jpg" alt="Login Alert" title="Login Alert Notification" width="500" height="900">
 
