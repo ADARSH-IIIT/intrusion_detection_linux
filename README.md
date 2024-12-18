@@ -9,4 +9,6 @@
 ### This mechanism ensures immediate awareness and control over login attempts, enhancing the overall security of the system.
 
 
-![phone image with telegram screen shot]( ./phone_telegram.jpg "telegram screen shot")
+
+<img src="./phone_telegram.jpg" alt="Login Alert" title="Login Alert Notification" width="500">
+
