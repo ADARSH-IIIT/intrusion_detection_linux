@@ -55,18 +55,18 @@ this is  backup command
 
 
 #here are the per-package modules (the "Primary" block)
-auth    [success=1 default=ignore]      pam_unix.so nullok
+### auth    [success=1 default=ignore]      pam_unix.so nullok
 
 
 #here's the fallback if no module succeeds
-auth    requisite                       pam_deny.so
+### auth    requisite                       pam_deny.so
 #prime the stack with a positive return value if there isn't one already;
 #this avoids us returning an error just because nothing sets a success code
 #since the modules above will each just jump around
-auth    required                        pam_permit.so
+### auth    required                        pam_permit.so
 #and here are more per-package modules (the "Additional" block)
-auth    required        pam_ecryptfs.so unwrap
-auth    optional                        pam_cap.so
+### auth    required        pam_ecryptfs.so unwrap
+### auth    optional                        pam_cap.so
 #end of pam-auth-update config
 
 
@@ -109,24 +109,24 @@ auth    optional                        pam_cap.so
 #pam-auth-update to manage selection of other modules.  See
 #pam-auth-update(8) for details.
 #XTRA ADDED LINE ==> MAIN LINE THAT RUNS OUR SCRIPT DURING AUTHENTICATION 
-auth    required    pam_exec.so seteuid  home/user/actual/path/of/your/script.sh 
+### auth    required    pam_exec.so seteuid  home/user/actual/path/of/your/script.sh 
 
 #here are the per-package modules (the "Primary" block)
-auth    [success=1 default=ignore]      pam_unix.so nullok
+### auth    [success=1 default=ignore]      pam_unix.so nullok
 
 
 #Capture photo only on failed authentication
-#auth    [default=bad success=ok user_unknown=ignore]    pam_exec.so seteuid    /home/adarsh/Desktop/imposter/main.sh
+### auth    [default=bad success=ok user_unknown=ignore]    pam_exec.so seteuid    /home/adarsh/Desktop/imposter/main.sh
 
 
 #here's the fallback if no module succeeds
-auth    requisite                       pam_deny.so
+### auth    requisite                       pam_deny.so
 #prime the stack with a positive return value if there isn't one already;
 #this avoids us returning an error just because nothing sets a success code
 #since the modules above will each just jump around
-auth    required                        pam_permit.so
+### auth    required                        pam_permit.so
 #and here are more per-package modules (the "Additional" block)
-auth    required        pam_ecryptfs.so unwrap
-auth    optional                        pam_cap.so
+### auth    required        pam_ecryptfs.so unwrap
+### auth    optional                        pam_cap.so
 #end of pam-auth-update config
 
